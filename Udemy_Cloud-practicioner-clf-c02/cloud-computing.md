@@ -108,3 +108,15 @@ AWS owns and mantains the network-connected hardware required for these applicat
 
 - 400+ points of presences in 90+ cities and 40+ countries
 - Content is delivered to end users with lower latency
+
+### Console
+
+- Can look up for services in alphabetical order or category, or search bar
+- Can access console for each AWS service (it shows the region of the service)
+- Not all services are available in every region
+
+### Shared Responsability Model
+
+- Customer: security in the cloud (customer data, platform applications, identity and access management, network and firewall configuration)
+- AWS: security of the cloud (software, hardware, infra structure)
+- AWS AUP - Acceptable Use Policy
