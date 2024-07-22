@@ -90,3 +90,59 @@
 - Access and manage AWS Services programmatically
 - embedded within your application
 - AWS CLI is built on AWS SDF for Python
+- CLI has the same authorization as the user who generated the credentials
+
+### Cloudshell
+
+- Alternative to run AWS CLI
+- directly on the Console
+- Terminal in the Cloud
+- The credentials are the same as you are using to log in the Console
+- The files will persist in the environment
+
+## IAM Roles
+
+- Services need to perform actions on our behalf
+- Similar to user, by it is used by AWS Services
+- E.g.: Permissions to a EC2 Instance added by a IAM Role
+- Common roles: EC2 Instance Roles, Lambda Function Roles.
+- Attach Policies to the role
+
+## IAM Security Tools
+
+- IAM Credential Report - list all users and status of their various credentials
+- IAM Access Advisor - show the service permissions granted to a user and when those services were last accessed
+
+### Credential Report
+
+- Generates a CSV
+- Information about every account (MFA, last used resources, password last used)
+
+### Access Advisor
+
+- which services were accessed by a user and when
+- can use to fine tune the authorization to a user
+
+## IAM Guidelines and Best Practices
+
+- do not use root account except for AWS account setup
+- One physical user = one AWS user
+- Assign users to groups and assign permissions to groups
+- Create Strong password policy
+- Use and Enforce MFA
+- Create and use Roles for giving permissions to AWS services
+- Use access keys for programmatic access
+- IAM Credentials Report and IAM Access Manager
+
+## Shared Responsibility Model for IAM
+
+- AWS:
+  - Infrastructure
+  - Configuration and vulnerability analysis
+  - Compliance validation
+- You:
+  - users, groups, policies, management and monitoring
+  - enable MFA on all account
+  - rotate keys often
+  - Use IAM tools to apply appropriate permissions
+  - Analyze access patterns and review permissions
