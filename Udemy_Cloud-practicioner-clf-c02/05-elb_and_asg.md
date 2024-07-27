@@ -101,3 +101,28 @@
   - Actual size / desired capacity: 3
   - Minimum size: 1
   - Maximum size: 6
+
+### Auto Scaling Groups - Scaling Strategies
+
+- Manual Scaling - update the size of an ASG manually
+- Dynamic Scaling - respond to changing demand
+  - simple / Step scaling
+    - When a CloudWatch alarm is triggered, then add 2 units
+  - target tracking scaling
+    - want the average ASG CPU to stay at around 40%
+  - Scheduled Scaling
+    - Anticipate a scaling based on known usage patterns
+    - Example: increase the min capacity to 10 at 5 pm on Fridays
+  - Predictive Scaling
+    - uses machines learning to predict future traffic ahead of time
+    - automatically provisions the right number of EC2 instances in advance
+
+## Summary
+
+- High availability (at least 2 AZs) vs scalability (vertical and horizontal) vs Elasticity vs Agility
+- ELB - distribute traffic across backend EC2 instances, can be Multi AZ
+- Support health checks
+- Classic, Application, Network, Gateway
+- ASG - elasticity for your application, across multiple AZs
+- scales EC2 instances based on demand, replace unhealthy
+- Integrated with ELB
