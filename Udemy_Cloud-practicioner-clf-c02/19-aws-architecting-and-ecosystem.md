@@ -166,3 +166,141 @@ The sustainability pillar focuses on minimizing the environmental impacts of run
 - Created by AWS Professionals by taking advantage of AWS Best Practices and lessons learned from 1000s of customers
 - AWS CAF identifies specific organizational capabilities that underpin successful cloud transformations
 - AWS CAF Groups its capabilities in six perspectives: **Business, People, Governance, Platform, Security, and Operations**
+
+### Business Capability
+
+- Business Perspective
+- People Perspective - a bridge between technology and business
+- Governance Perspective
+
+![Business Capability](image-2.png)
+
+### Technical Capabilities
+
+- Platform Perspective
+- Security Perspective
+- Operations Perspective
+
+![Technical Capabilities](image-3.png)
+
+![Cloud Transformation Value Chain](image-4.png)
+
+### AWS CAF - Transformation Domains
+
+- Technology - using the cloud to migrate and modernize legacy infrastructure, applications, data and analytics platforms
+- Process - digitizing, automating and optimizing your business applications
+- Organization - Reimagining your operating model
+- Product - reimaining your business model by creating new value propositions (products and services) and revenue models
+
+### AWS CAF Transformation Phases
+
+- Envision - demonstrate how the Cloud will accelerate business outcomes by identify transformation opportunities and create a foundation for your digital transformation
+- Align - identify capability gaps across the 6 AWS CAF Perspectives which results in an Action Plan
+- Launch - build and deliver pilot initiatives in production and demonstrate incremental business value
+- Scale - expand pilot initiatives to the desired scale while realizing the desired business benefits
+
+## AWS Right Sizing
+
+- EC2 has many instances types, choosing the most powerful instance is not the best choice, bacause cloud is elastic
+- Right sizing is the process of matching instance types nad sizes to your workload performance and capacity requirements at the lowest possible cost
+- Scaling up is easy so always start small
+- it is also de process of looking at deployed instances and identifying opportunities to eliminate or downsize without compromising capacity or other requirements, which results in lower costs
+- it is important to Right Size
+  - before a Cloud Migration
+  - continuously after the cloud onboarding process (requirements change over time)
+- CloudWatch, Cost Explorer, Trusted Advisor, 3rd party tools can help
+
+# AWS Ecosystem - Free resources
+
+- AWS Blogs
+- AWS Forums (community)
+- AWS Whitepapers & Guides
+- AWS Partner Solutions (formerly Quick Starts)
+  - automated, gold standard deployments in the AWS Cloud
+  - Build your production environment quickly with templates
+  - Example: WordPress on AWS
+  - Leverages CloudFormation
+- AWS Solutions
+  - Vetted Technology Solutions for the AWS Cloud
+
+# AWS Ecosystem - AWS Support
+
+- Developer
+  - business hours email access to Cloud Support Associates
+  - General Guidance: < 24 business hours
+  - System impaired: < 12 business hours
+- Business
+
+  - 24 x 7 phone, email, and chat access to Cloud Support Engineers
+  - Production system impaired: < 4 hours
+  - Production system down: < 1 hour
+
+- Enterprise
+  - Acess to a Technical Account Manager (TAM)
+  - Concierge Support Team (for billing and account best practices)
+  - Business-critical system down: < 15 minutes
+
+# AWS Marketplace
+
+- digital catalog with thousands of software listing from independent software vendors (3rd party)
+- Example:
+  - Custom AMI (custom OS, firewalls, technical solutions)
+  - CloudFormation templates
+  - Software as a Service
+  - Containers
+- if you through the AWS Marketplae, it goes into your AWS Bill
+- you can sell your own solutions on the AWS Marketplace
+
+# AWS Training
+
+- AWS Digital (online) and Classroom Training (in-person or virtual)
+- AWS Private training - for your organization
+- training and certification for the US Government
+- training and certification for the Enterprise
+
+- AWS Academy: helps universities teach AWS
+
+# AWS Professional Services & Partner Network
+
+- The AWS professional services organization is a global team of experts
+- they work alongside your team and a choosen member of the APN
+- APN = AWS Partner Network
+- APN Technology Partners
+- APN Consulting Partners
+- APN Training Partners
+- AWS Competency Program
+- AWS Navigate Program
+
+# AWS IQ
+
+- quickly find professional help for your AWS projects
+- Engage and pay AWS Certified 3rd party experts for on-demand project work
+- Video-conferencing, contract management, secure collaboration, integrated billing
+- For Customers:
+  - Submit Request -> review responses -> Select Expert -> Work Securely - pay per milestone
+- For Experts
+  - Create Profile -> Connect with Customers -> Start a proposal -> Work Securely -> Get Paid
+
+# AWS re:Post
+
+- Forum (community)
+- AWS managed Q&A service offering crowd-sourced, expert reviewed answers to your technical questions about AWS that replaces the original AWS Forums
+- Part of the AWS Free Tier
+- Community members can earn reputation points to build up their community experts status by providing accepted answers and reviewing answers from other users
+- Questions from AWS Premium support customers that do not receive a response from the community are passed on to AWS Support Engineers
+- AWS re:Post is not intended to be used for questions that are time-sensitive or involve any proprietary information
+
+# AWS Knowledge Center
+
+- part of re:Post
+- contains the most frequent and common questions and requests
+
+# AWS Managed Services (AMS)
+
+- provides infrastructure and application support on AWS
+- AMS offers a team of AWS Experts who manage and operate your infrastructure for security, reliability, and availability
+- helps organizations offload routine management tasks and focus on their business objectives
+- fully managed service, so AWS handles common activities such as change requests, monitoring, patch management, security and backup services
+- implements best practices and maintains your AWS infrastructure to reduce your operational overhead and risk
+- AMS business hours are 24/365
+- contact sales of AWS
