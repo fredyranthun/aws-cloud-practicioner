@@ -73,8 +73,7 @@ AWS owns and mantains the network-connected hardware required for these applicat
 
 ### Types of cloud computing
 
--Infrastructure as a Service (IaaS): provide building blocks for cloud IT, networking, computers, data storage, highest level of flexibility (parallel with traditional on-premises IT) - EC2
-
+- Infrastructure as a Service (IaaS): provide building blocks for cloud IT, networking, computers, data storage, highest level of flexibility (parallel with traditional on-premises IT) - EC2
 - Platform as a Service (PaaS): removes the need to manage the underlying infrastructure - focus on deployment and management - Elastic Beanstalk
 - Software as a Service (SaaS): completed product that is run and managed by service provider - E.g: Rekognition, Dropbox, Zoom.
 
