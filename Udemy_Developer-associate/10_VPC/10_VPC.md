@@ -90,3 +90,45 @@ NAT Gateways (AWS-managed) and NAT Instances (self-managed) allow your instance 
 - VPC Endpoint Interface: most services (including S3 & DynamoDB)
 
 ![VPC Endpoint](image-7.png)
+
+## Site to Site VPN and Direct Connect
+
+Connect on-permises datacenter to AWS
+
+### Site to Site VPN
+
+- Connect an on-premises VPN to AWS
+- The connection is automatically encrypted
+- goes over the public internet
+
+### Direct Connect (DX)
+
+- Establish a physical connection between on-premises and AWS
+- the connection is private, secure and fast
+- goes over a private network
+- takes at least one month to establish
+
+![Site to Site VPN & Direct Connect](image-8.png)
+
+# Summarize
+
+- VPC: Virtual Private Cloud
+- Subnets: tied to an AZ, network partition of the VPC
+- Internet Gateway: at the VPC level, provide Internet Access
+- NAT Gateway / Instances: give internet access to private subnets
+- NACL: Stateless, subnet rules for inbound and outbound
+- Security Groups: Stateful, operate at the EC2 instance level or ENI
+- VPC Peering: connect two VPC with non overlapping IP ranges, non transitive
+- VPC Endpoints: provide private access to AWS services within VPC
+- VPC Flow Logs: network traffic logs
+- Site to Site VPN: VPN over public internet between on-premises DC and AWS
+- Direct Connect: direct private connection to AWS
+
+## Typical 3 tier solution Architecture
+
+- Users -> ELB (in a public Subnet)
+- User requests Route 53 to know where it should go
+- Auto Scaling group will be deployed in a Private Subnets (per AZ)
+- Data Subnet: Amazon RDS (Read / write data) and Elasticache (Store / retrieve session data + Cached data)
+
+![3 tier solution architecture](image-9.png)
